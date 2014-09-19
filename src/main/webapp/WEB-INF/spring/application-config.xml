@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:jee="http://www.springframework.org/schema/jee" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:mybatis="http://mybatis.org/schema/mybatis-spring"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-3.0.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+		http://www.springframework.org/schema/jee http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd	
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.0.xsd	
+		http://mybatis.org/schema/mybatis-spring http://mybatis.org/schema/mybatis-spring.xsd	
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+	
+	<mybatis:scan base-package="com.company.myproject.dao.mappers" />
+
+	<!-- DATABASE -->
+	<!-- 
+	<jee:jndi-lookup id="dataSource" jndi-name="jdbc/MyProject" />
+	 -->
+	 
+	<!-- Enable AspectJ / AOP -->
+	<aop:aspectj-autoproxy proxy-target-class="false"/>
+	
+	<!-- SECURITY -->
+	<!-- 
+  	<tx:annotation-driven transaction-manager="transactionManager"/>
+	<bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+	  <property name="dataSource" ref="dataSource" />
+	</bean>
+	
+	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+	  <property name="dataSource" ref="dataSource" />
+	  <property name="mapperLocations" value="classpath*:maps/*.xml" />  
+	</bean>
+	
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionTemplate">
+	  <constructor-arg index="0" ref="sqlSessionFactory" />
+	</bean>
+	 -->
+	
+	<!-- ASPECTS -->
+	<bean id="databaseAspect" class="com.company.myproject.aspect.DatabaseAspect" />
+	
+	
+	<jee:jndi-lookup jndi-name="mail/host" id="mailHost"/>
+	<jee:jndi-lookup jndi-name="mail/port" id="mailPort"/>
+	<jee:jndi-lookup jndi-name="mail/useAuth" id="useAuth"/>
+	<jee:jndi-lookup jndi-name="mail/username" id="mailUsername"/>
+	<jee:jndi-lookup jndi-name="mail/password" id="mailPassword"/>
+	
+	<!-- SET default mail properties -->
+    <bean id="mailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+        <property name="host" ref="mailHost"/>
+        <property name="port" ref="mailPort"/>
+        <property name="username" ref="mailUsername"/>
+        <property name="password" ref="mailPassword"/>
+        <property name="javaMailProperties">
+            <map>
+            	<entry key="mail.transport.protocol" value="smtp"/>
+            	<entry key="mail.smtp.auth" value-ref="useAuth"/>
+            	<entry key="mail.smtp.starttls.enable" value="false"/>
+            	<entry key="mail.debug" value="false"/>
+            </map>
+        </property>
+    </bean>
+	
+</beans>

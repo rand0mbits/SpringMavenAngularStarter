@@ -1,0 +1,341 @@
+/* ==========================================================================
+  				FONTS
+   ========================================================================== */
+/*-- Text - OpenSans --*/
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Light-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-LightItalic-webfont.svg#OpenSansLightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Semibold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Semibold-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Semibold-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Semibold-webfont.svg#OpenSansSemibold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-SemiboldItalic-webfont.svg#OpenSansSemiboldItalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-BoldItalic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-BoldItalic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-BoldItalic-webfont.svg#OpenSansBoldItalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-ExtraBold-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-ExtraBold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-ExtraBold-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-ExtraBold-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-ExtraBold-webfont.svg#OpenSansExtrabold') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-ExtraBoldItalic-webfont.svg#OpenSansExtraboldItalic') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/opensans/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/opensans/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/opensans/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/opensans/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* ==========================================================================
+  				DESKTOP
+   ========================================================================== */
+
+
+@media ( min-width : 1086px) {
+	body {
+		background: #fff /*url('../images/background.jpg') repeat-x left top*/;
+	}
+	
+	
+	h1.page-header {
+		padding: 3px 20px 5px;
+	}
+
+/******************************
+****** TYPOGRAPHY *************
+******************************/
+.text-normal {
+	font-size: 12px;
+	font-weight: normal;
+}
+
+body {
+		font-family: 'Open Sans';
+		
+}
+
+
+a {
+	cursor: pointer;
+}
+
+.modal-team {
+	cursor:pointer;
+}
+
+.section-header {
+	width:100%;
+}
+
+
+
+h1.page-header {
+	border-bottom: solid 1px #ccc;
+	background-color: #eaeaea;
+	margin: 5px 0;
+	font-size: 17px;
+	font-weight: bold;
+	box-shadow: 1px 1px white;
+	margin-bottom: 5px;
+}
+
+hr.thick-rule {
+	height: 3px;
+	color: #000000;
+	background-color: #000000;
+}
+
+#header {
+	position: relative;
+	padding: 0px 20px;
+	max-width: 1440px;
+}
+
+
+
+
+section {
+	margin: 10px 0px;
+	border: solid 1px #cfcfcf;
+	/* overflow: auto; */
+}
+
+
+
+section > h1 {
+	font-size: 1.11em;
+	font-weight: bold;
+	background-color: #1a477b;
+	color: #fefefe;
+	margin: 0;
+	padding-right: 4px;
+	padding-top: 7px;
+	padding-left:4px;
+	min-height: 30px;
+}
+
+
+section.container > h1 {
+	font-size: 1.11em;
+	font-weight: bold;
+	background-color: #373737;
+	color: #fefefe;
+	margin: 0 -15px;
+	padding: 4px;
+}
+
+
+/************************
+**		MESSAGES	   **
+************************/
+#messages{
+	position: fixed;
+	z-index: 2000;
+	bottom: 70px;
+	float: right;
+	margin: 0px 15px;
+	right: 0px;
+	max-width: 450px;
+	font-family: Arial,Helvetica,sans-serif;
+}
+
+#messages > .msg-block > p {
+	margin: 0;
+}
+
+#messages > .msg-block > p .short-message{
+	float: left;
+	width: 92%;
+	color: #000;
+	font-weight: 600;
+	word-wrap: break-word;
+}
+
+#messages > .msg-block > p button.close{
+	font-weight: bold;
+}
+
+#messages > .msg-block {
+	float: left;
+	font-size: 14px;
+	font-weight: 800;
+	min-width: 300px;
+	border-width: 2px;
+	border-style: solid;
+	border-radius: 6px;
+	padding: 8px 5px 8px 10px;
+	box-shadow: 3px 4px 8px #aaa;
+	line-height: 15px;
+	width: 95%;
+	word-wrap: break-word;
+	margin-top: 10px;
+}
+
+#messages > .msg-errors {
+	background: #f3dfde;
+	color: #9c0010;
+	border-color: #9c0010;
+}
+
+#messages > .msg-warnings{
+	background: #FCFCE2;
+	color: #543E00;
+	border-color: #FAE9BF;
+}
+
+#messages > .msg-successes {
+	background: #ddefd7;
+	color: #174e26;
+	border-color: #174e26;
+}
+
+#messages .msg-close {
+	float: right;
+	font-size: 21px;
+	font-weight: bold;
+	color: #000;
+	text-shadow: 0 1px 0 #fff;
+	filter: alpha(opacity=20);
+	opacity: .2;
+	border: 0;
+	background: none;
+	line-height: 15px;
+}
+
+#messages .msg-close:hover {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+#messages > .msg-block ul {
+	color: #000;
+	font-size: 13px;
+	padding: 0px 5px 0px 25px;
+	font-weight: normal;
+	line-height: 18px;
+}
+
+.response-messages {
+	padding: 2px 10px;
+	margin: 1px;
+}
+
+
+
+/* ==========================================================================
+  				REDEFINED BOOTSTRAP
+   ========================================================================== */
+
+
+/* ==========================================================================
+  		ORGANIZE ME: definitions below are not organized. Please put them 
+  		into appropriate sections.
+   ========================================================================== */
+#appwide-spinner img {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	z-index: 2051;
+	margin-top: -64px;
+	margin-left: -64px;
+}
+#appwide-backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 2050;
+	background-color: #e8e8e8;
+	opacity: .5;
+}
+#nonblocking-spinner {
+	/* background-image: url('../images/nonblocking-spinner-background.png'); */
+	background-repeat: no-repeat;
+	background-size: 150px 166px;
+	position: fixed;
+	z-index: 2000;
+	bottom: 0px;
+	float: left;
+	left: 0px;
+	width:150px;
+	height:166px;
+}
+
+#nonblocking-spinner img{
+	padding: 45px 0px 0px 18px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.autoscroll-x {
+	overflow-x: auto;
+}
+
+
+
+
